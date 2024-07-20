@@ -43,11 +43,11 @@ function showMovies(arr) {
                             <p class="">${desc}</p>
 
                             <p>Release Date : <span class="date"> ${releaseDate}</span></p>
-                            <div class="stars text-warning">
+                            <div class="stars pt-2">
                                 ${stars}
                             </div>
 
-                            <p class="rate-circle mt-2 pt-1">${movie.vote_average}</p>
+                            <p class="rate-circle mt-2 fs-5">${Math.round(movie.vote_average * 10) / 10}</p>
                         </div>
                     </div>
                 </div>
