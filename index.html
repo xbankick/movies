@@ -1,0 +1,130 @@
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <!-- ICON -->
+    <link rel="icon" href="images/logo.png">
+
+    <!-- DEPS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Side nav -->
+    <div class="side-nav-menu h-100 position-fixed d-flex">
+        <div class="nav-tab d-flex flex-column justify-content-between h-100 p-4 ">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li class="py-2 position-relative np">Now Playing</li>
+                    <li class="py-2 position-relative pp">Popular</li>
+                    <li class="py-2 position-relative tr">Top Rated</li>
+                    <li class="py-2 position-relative tre">Trending</li>
+                    <li class="py-2 position-relative up">Upcoming</li>
+                    <li id="cus" class="py-2 position-relative">Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="icons py-2 ms-2">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter ms-2"></i>
+                    <i class="fa-solid fa-globe ms-2"></i>
+                </div>
+                <div class="footer">
+                    <p class="text-muted">Copyright © 2024 All Rights <br>Reserved.<br>Created by <a target="_blank"
+                            href="https://github.com/xbankick" class="text-danger text-decoration-none">Osama Ragab</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center nav-header d-flex flex-column justify-content-between py-4 bg-white">
+            <img src="images/logo.png" class="w-50 mx-auto" alt="">
+            <i class="side-toggler fa-solid fa-x text-dark fs-3"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block text-black fs-5 mb-2"></i>
+                <i class="fa-solid fa-share-nodes text-black fs-5" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <!-- Search -->
+    <div class="container w-75">
+        <div class="row py-5">
+            <div class="col-md-6 mx-auto">
+                <input type="text"
+                    class="searchInput form-control bg-transparent rounded-5 ps-3 pe-3 border-2 shadow-none border-white"
+                    placeholder="Search">
+            </div>
+        </div>
+    </div>
+    <!-- CONTENT -->
+    <div class="container">
+        <div class="row justify-content-center movies-container">
+
+        </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <p class="fs-2 pb-3">Contact US</p>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <input type="text"
+                        class="form-control bg-transparent placeholder-center border-0 border-bottom border-white"
+                        placeholder="Enter Your Name" id="name">
+                    <label class="text-danger" id="nameLabel" for="name"></label>
+                </div>
+                <div class="col-md-6">
+                    <input type="email"
+                        class="form-control bg-transparent placeholder-center border-0 border-bottom border-white"
+                        placeholder="Enter Your Email" id="email">
+                    <label class="text-danger" id="emailLabel" for="email"></label>
+                </div>
+                <div class="col-md-6 ">
+                    <input type="number"
+                        class="form-control bg-transparent placeholder-center border-0 border-bottom border-white"
+                        placeholder="Enter Your Phone" id="phone">
+                    <label class="text-danger" id="phoneLabel" for="phone"></label>
+                </div>
+                <div class="col-md-6 ">
+                    <input type="number"
+                        class="form-control bg-transparent placeholder-center border-0 border-bottom border-white"
+                        placeholder="Enter Your Age" id="age">
+                    <label class="text-danger" id="ageLabel" for="age"></label>
+                </div>
+                <div class="col-md-6 position-relative">
+                    <input type="password"
+                        class=" form-control bg-transparent placeholder-center border-0 border-bottom border-white"
+                        placeholder="Enter Your Password" id="pass">
+                    <label class="text-danger" id="passLabel" for="pass"></label>
+                    <i class="position-absolute show-pass fa-regular fa-eye-slash"></i>
+                </div>
+                <div class="col-md-6 ">
+                    <input type="password"
+                        class="form-control bg-transparent placeholder-center border-0 border-bottom border-white"
+                        placeholder="ReEnter Password" id="reEnter">
+                    <label class="text-danger" id="reLabel" for="reEnter"></label>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <button class="btn submit-btn ps-4 pe-4 pt-2 pb-2">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/sideNav.js" type="module"></script>
+<script src="js/validation.js"></script>
+<script src="js/movies.js"></script>
+
+
+</html>
