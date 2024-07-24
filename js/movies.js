@@ -18,7 +18,6 @@ function showMovies(arr) {
     let html = ``
     for (let i = 0; i < arr.length; i++) {
         const movie = arr[i];
-        console.log(movie);
         let title = movie.title
         let imagePath = "images/default-movie.jpg"
         let stars = getStars(movie.vote_average)
